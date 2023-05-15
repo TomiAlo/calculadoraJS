@@ -80,6 +80,7 @@ function flushOperation(intBuffer){
     }else if(previousOperator==='÷'){
         runningTotal/=intBuffer;
     }
+    runningTotal=runningTotal.toFixed(6);
 }
 /*
     this function executes when the user clicks in a button
